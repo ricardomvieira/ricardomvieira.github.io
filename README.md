@@ -1,3 +1,0 @@
-# RICARDO VIEIRA
-
-Hi.
