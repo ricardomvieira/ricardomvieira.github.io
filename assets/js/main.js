@@ -15,10 +15,8 @@
       if (img) viewerImg.src = img;
       viewerCap.textContent = cap;
     });
-    el.addEventListener('mouseleave', () => {
-      showDefault();
-    });
-    // focus/blur for keyboard accessibility
+    el.addEventListener('mouseleave', showDefault);
+    // Accessibility
     el.setAttribute('tabindex', '0');
     el.addEventListener('focus', () => {
       const img = el.getAttribute('data-image');
