@@ -1,4 +1,4 @@
-/* 1/3 text (left), 2/3 image (right), sticky centered image with right padding */
+/* 1/3 text (left), 2/3 image (right), FIXED image centered vertically & padded from right edge */
 :root {
   --text: #0a0a0a;
   --muted: #666;
@@ -28,30 +28,29 @@ main { width: 100%; max-width: 1600px; }
   align-items: flex-start;
 }
 
+/* Left column (scrolls normally) */
 .left {
   flex: 0 0 33%;
   max-width: 33%;
   padding-left: 1rem;
 }
 
+/* Right column acts as a spacer so layout keeps 1/3–2/3.
+   The actual image viewer is fixed to the viewport. */
 .right {
   flex: 0 0 67%;
   max-width: 67%;
-  display: block;
-  padding-right: 1.5rem; /* add breathing room from the right edge */
-  position: relative;
-  min-height: 60vh; /* ensure room for centering */
+  min-height: 60vh;
 }
 
+/* Fixed viewer on desktop */
 .viewer {
-  position: sticky;
-  top: 50%;                 /* center in viewport vertically */
+  position: fixed;
+  top: 50%;
+  right: 2rem;                /* padding from right edge */
   transform: translateY(-50%);
+  width: min(900px, 60vw);    /* large but responsive */
   margin: 0;
-  width: 90%;               /* use most of the right column */
-  max-width: none;
-  margin-left: auto;        /* keep it towards the right */
-  margin-right: 0;
 }
 
 h1, h2 { font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
@@ -81,15 +80,22 @@ h2 { font-size: 17px; font-weight: 600; margin: 1.6rem 0 .5rem; }
   min-height: 1.2em;
 }
 
-/* Responsive */
+/* Responsive: fall back to normal flow on small screens */
 @media (max-width: 1024px) {
   .left { flex-basis: 38%; max-width: 38%; }
   .right { flex-basis: 62%; max-width: 62%; }
-  .viewer { width: 92%; }
+  .viewer { width: min(720px, 80vw); right: 1.5rem; }
 }
 
 @media (max-width: 900px) {
   .wrap { flex-direction: column; }
-  .left, .right { max-width: 100%; flex-basis: 100%; padding-right: 0; }
-  .viewer { position: static; transform: none; width: 75vw; margin: 0 auto; } /* disable sticky & keep centered on mobile */
+  .left, .right { max-width: 100%; flex-basis: 100%; }
+  .viewer {
+    position: static;
+    transform: none;
+    width: 90vw;
+    margin: 0 auto;
+    right: auto;
+    top: auto;
+  }
 }
