@@ -1,5 +1,4 @@
-/* Minimal split layout with 1/3 text (left) and 2/3 image (right) */
-/* Sticky image gallery on the right */
+/* 1/3 text (left), 2/3 image (right), sticky and aligned right horizontally, centered vertically */
 :root {
   --text: #0a0a0a;
   --muted: #666;
@@ -21,34 +20,34 @@ body {
   justify-content: center;
 }
 
-main { width: 100%; max-width: 1400px; }
+main { width: 100%; max-width: 1600px; }
 
 .wrap {
   display: flex;
   gap: 2.5rem;
-  align-items: flex-start; /* left column can grow; right will stick */
+  align-items: flex-start;
 }
 
 .left {
   flex: 0 0 33%;
   max-width: 33%;
-  padding-left: 1rem; /* breathing room from the edge */
+  padding-left: 1rem;
 }
 
 .right {
   flex: 0 0 67%;
   max-width: 67%;
-  display: block; /* so the sticky child uses the viewport properly */
+  display: flex;
+  justify-content: flex-end;   /* align to right horizontally */
+  align-items: center;         /* center vertically */
 }
 
 .viewer {
   position: sticky;
-  top: 2rem; /* same vertical padding as requested */
+  top: 2rem;                /* same vertical padding */
   margin: 0;
-  max-width: 700px; /* large image area */
-  width: 100%;
-  margin-left: auto; /* keep image nicely centered/right within column */
-  margin-right: auto;
+  width: 90%;               /* occupy most of right column */
+  max-width: none;
 }
 
 h1, h2 { font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; }
@@ -82,11 +81,11 @@ h2 { font-size: 17px; font-weight: 600; margin: 1.6rem 0 .5rem; }
 @media (max-width: 1024px) {
   .left { flex-basis: 38%; max-width: 38%; }
   .right { flex-basis: 62%; max-width: 62%; }
-  .viewer { max-width: 600px; }
+  .viewer { width: 92%; }
 }
 
 @media (max-width: 900px) {
   .wrap { flex-direction: column; }
   .left, .right { max-width: 100%; flex-basis: 100%; }
-  .viewer { position: static; max-width: 75vw; } /* disable sticky on narrow screens */
+  .viewer { position: static; width: 75vw; }
 }
