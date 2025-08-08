@@ -28,18 +28,22 @@ main {
 /* Intro row: image left, text right */
 .intro {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; /* align top edges of photo and text */
   gap: 2rem;
 }
 
 .profile-pic {
-  max-width: 300px;
+  max-width: 340px; /* increased size */
   height: auto;
   border-radius: 4px;
   display: block;
+  object-fit: cover; /* keeps aspect ratio without distortion */
 }
 
-.intro-text { flex: 1; }
+.intro-text {
+  flex: 1;
+}
+
 
 /* Tighter header block */
 h1 {
