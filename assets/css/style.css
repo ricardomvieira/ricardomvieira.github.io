@@ -1,4 +1,4 @@
-/* Minimal, centered layout */
+/* Minimal, centered layout with Source Serif 4 headings and Inter body */
 :root {
   --text: #0a0a0a;
   --muted: #666;
@@ -9,7 +9,7 @@
 html, body { height: 100%; }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
   display: flex;
@@ -17,12 +17,13 @@ body {
   align-items: center;
   margin: 0;
   padding: 2rem;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 main {
-  max-width: 900px; /* extra room for larger image */
+  max-width: 900px;
   width: 100%;
-  line-height: 1.7;
 }
 
 /* Intro row: image left, text right */
@@ -33,31 +34,36 @@ main {
 }
 
 .profile-pic {
-  max-width: 360px; /* larger image */
+  max-width: 360px; /* unchanged */
   height: auto;
   border-radius: 4px;
   display: block;
   object-fit: cover;
-  margin-top: 2px; /* nudge to align visually with H1 baseline across browsers */
+  margin-top: 2px; /* visual alignment tweak */
 }
 
 .intro-text { 
   flex: 1; 
-  margin-top: 0; /* ensure no offset */
+  margin-top: 0;
 }
 
-/* Tighter header block */
+/* Headings with Source Serif 4 */
+h1, h2 {
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+}
+
 h1 {
-  font-size: 2rem;
-  line-height: 1.15; /* stable height */
+  font-size: 30px;
+  line-height: 1.15;
   letter-spacing: 0.02em;
-  margin: 0 0 0.2rem 0; /* no top margin to align with image */
+  margin: 0 0 0.2rem 0;
+  font-weight: 600;
 }
 
 .subtitle {
   display: inline-block;
   margin-top: 0.1rem;
-  font-size: 0.95rem;
+  font-size: 0.95em;
   color: var(--muted);
 }
 
@@ -68,9 +74,15 @@ h1 {
 
 .subtitle a:hover { text-decoration: underline; }
 
+/* Bio paragraphs smaller and grey */
+.bio {
+  font-size: 0.9em;
+  color: #444;
+}
+
 h2 {
   margin: 1.6rem 0 0.5rem 0;
-  font-size: 1.125rem;
+  font-size: 17px;
   font-weight: 600;
 }
 

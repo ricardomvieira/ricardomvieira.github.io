@@ -13,6 +13,14 @@ title: Ricardo Vieira
       </a>
     </span>
 
+    <p class="bio">
+      Word and sound are here thought of as entities built by the human perception to enable the construction of not just one world-version, but multiple and equally valid ones that enable the actual.
+    </p>
+
+    <p class="bio">
+      Art and research are the processes and outputs from which thought and experiment are the framework. My solo work then spans from performances in experimental music and electronics to art installations, using the research done to explore potentialities in aesthetic choices during the creative process. My master’s dissertation “A sound from another: the object, the mark and the symbol” continues to delve into a greater understanding of the human perception of sound and the uses and significations we attribute to it. The ongoing work <em>Possessíveis</em> (premiered in Jan 2025) stems from this research.
+    </p>
+
     <h2>SOLO WORK</h2>
     <p>
       Possessíveis (2025)<br>
