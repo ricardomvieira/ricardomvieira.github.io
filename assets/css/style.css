@@ -1,0 +1,47 @@
+/* Minimal, centered layout inspired by thormagnusson.github.io */
+:root {
+  --text: #0a0a0a;
+  --bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+main {
+  max-width: 720px;
+  width: 100%;
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  margin: 0 0 1.5rem 0;
+}
+
+h2 {
+  margin: 2rem 0 0.5rem 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+p { margin: 0.5rem 0; }
+
+/* Make line breaks via Markdown double-spaces feel nicely spaced */
+main br { line-height: 2; }
+
+@media (max-width: 640px) {
+  body { align-items: flex-start; }
+  main { padding-top: 2rem; }
+}
