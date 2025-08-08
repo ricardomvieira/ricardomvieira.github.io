@@ -3,8 +3,8 @@ layout: default
 title: Ricardo Vieira
 ---
 
-# RICARDO VIEIRA  
-[Portfolio + CV](https://drive.google.com/file/d/1h6vjKp67jGPnLY6Mnubx8NZEv_2xnL_1/view?usp=sharing)
+# RICARDO VIEIRA
+<span class="subtitle"><a href="https://drive.google.com/file/d/1h6vjKp67jGPnLY6Mnubx8NZEv_2xnL_1/view?usp=sharing">Portfolio + CV</a></span>
 
 ## SOLO WORK
 Possessíveis (2025)  
