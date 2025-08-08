@@ -14,3 +14,4 @@ We Press For Silence (2019)
 ## Collaborations
 <a href="https://luizzanotello.com/tempo-e-tempo/" target="_blank">Tempo e Tempo</a> with Luiz Zanotello (2024)  
 Invasor Abstracto #8 with OSSO Collective (2024)  
+Nunca Estive Tão Perto (short-film by Francisca Dores, 2024)

@@ -1,6 +1,7 @@
-/* Minimal, centered layout inspired by thormagnusson.github.io */
+/* Minimal, centered layout */
 :root {
   --text: #0a0a0a;
+  --muted: #666;
   --bg: #ffffff;
 }
 
@@ -24,14 +25,31 @@ main {
   line-height: 1.7;
 }
 
+/* Tighter header block */
 h1 {
   font-size: 2rem;
   letter-spacing: 0.02em;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 0.2rem 0; /* tightened bottom margin */
+}
+
+.subtitle {
+  display: inline-block;
+  margin-top: 0.1rem; /* snugs up under the H1 */
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.subtitle a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.subtitle a:hover {
+  text-decoration: underline;
 }
 
 h2 {
-  margin: 2rem 0 0.5rem 0;
+  margin: 1.6rem 0 0.5rem 0;
   font-size: 1.125rem;
   font-weight: 600;
 }
