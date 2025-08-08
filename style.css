@@ -1,0 +1,30 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+}
+header nav {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+header nav a {
+    text-decoration: none;
+    color: #000;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #666;
+}
