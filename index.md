@@ -39,7 +39,7 @@ title: Ricardo Vieira
 
   <aside class="right">
     <figure class="viewer">
-      <img id="mainImage" src="/assets/images/profile.jpg" alt="Ricardo Vieira">
+      <img id="mainImage" src="" alt="Selected work">
       <figcaption id="mainCaption"></figcaption>
     </figure>
   </aside>

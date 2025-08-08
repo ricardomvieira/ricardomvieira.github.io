@@ -1,29 +1,28 @@
+
 (function() {
   const viewerImg = document.getElementById('mainImage');
   const viewerCap = document.getElementById('mainCaption');
-  const defaultSrc = viewerImg.getAttribute('src');
 
-  function showDefault() {
-    viewerImg.src = defaultSrc;
-    viewerCap.textContent = '';
+  // Start empty
+  viewerImg.src = '';
+  viewerImg.style.display = 'none';
+  viewerCap.textContent = '';
+
+  function showItem(src, caption) {
+    if (!src) return;
+    viewerImg.src = src;
+    viewerImg.style.display = 'block';
+    viewerCap.textContent = caption || '';
   }
 
   document.querySelectorAll('.proj').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      const img = el.getAttribute('data-image');
-      const cap = el.getAttribute('data-caption') || '';
-      if (img) viewerImg.src = img;
-      viewerCap.textContent = cap;
-    });
-    el.addEventListener('mouseleave', showDefault);
-    // Accessibility
-    el.setAttribute('tabindex', '0');
-    el.addEventListener('focus', () => {
-      const img = el.getAttribute('data-image');
-      const cap = el.getAttribute('data-caption') || '';
-      if (img) viewerImg.src = img;
-      viewerCap.textContent = cap;
-    });
-    el.addEventListener('blur', showDefault);
+    const img = el.getAttribute('data-image');
+    const cap = el.getAttribute('data-caption') || '';
+
+    // Hover/focus shows the item
+    el.addEventListener('mouseenter', () => showItem(img, cap));
+    el.addEventListener('focus', () => showItem(img, cap));
+
+    // Do NOT clear on mouseleave/blur so the last hovered stays visible
   });
 })();
