@@ -1,0 +1,18 @@
+title: "Ricardo Vieira"
+description: "Artist • Sound Designer • New Media"
+baseurl: "" 
+url: "https://ricardomvieira.github.io"
+theme: minima
+author:
+  name: "Ricardo Vieira"
+  email: "your-email@example.com"
+
+nav:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about
+  - title: "Works"
+    url: /works
+  - title: "Contact"
+    url: /contact
