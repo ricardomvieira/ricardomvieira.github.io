@@ -1,14 +1,16 @@
-document.querySelectorAll('.sidebar button').forEach(button => {
-    button.addEventListener('click', () => {
-        document.querySelectorAll('.sidebar button').forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+document.querySelectorAll('.sidebar nav a').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
 
-        const tabId = button.getAttribute('data-tab');
-        document.querySelectorAll('.tab-content').forEach(section => {
+        // Update active link
+        document.querySelectorAll('.sidebar nav a').forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+
+        // Show correct project content
+        const projectId = link.getAttribute('data-project');
+        document.querySelectorAll('.project-content').forEach(section => {
             section.classList.remove('active');
-            if (section.id === tabId) {
-                section.classList.add('active');
-            }
         });
+        document.getElementById(projectId).classList.add('active');
     });
 });

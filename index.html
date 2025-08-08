@@ -7,36 +7,41 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-    <nav class="sidebar">
-        <button data-tab="home" class="active">Home</button>
-        <button data-tab="about">About</button>
-        <button data-tab="work">Work</button>
-        <button data-tab="contact">Contact</button>
+<div class="sidebar">
+    <h1>Ricardo Vieira</h1>
+    <nav>
+        <a href="#" data-project="default" class="active">Home</a>
+        <a href="#" data-project="project1">Project One</a>
+        <a href="#" data-project="project2">Project Two</a>
+        <a href="#" data-project="project3">Project Three</a>
+        <a href="#" data-project="project4">Project Four</a>
+        <a href="#" data-project="project5">Project Five</a>
     </nav>
-    <main class="content">
-        <section id="home" class="tab-content active">
-            <h1>Ricardo Vieira</h1>
-            <p>Artist, composer, and new media explorer.</p>
-        </section>
-        <section id="about" class="tab-content">
-            <h1>About</h1>
-            <p>I am a Portuguese artist working across sound, media, and technology. My practice spans composition, sound design, and interactive installations.</p>
-        </section>
-        <section id="work" class="tab-content">
-            <h1>Work</h1>
-            <ul>
-                <li><strong>Project 1</strong> — Description of project 1.</li>
-                <li><strong>Project 2</strong> — Description of project 2.</li>
-                <li><strong>Project 3</strong> — Description of project 3.</li>
-            </ul>
-        </section>
-        <section id="contact" class="tab-content">
-            <h1>Contact</h1>
-            <p>Email: <a href="mailto:ricardo@example.com">ricardo@example.com</a></p>
-            <p>GitHub: <a href="https://github.com/ricardomvieira" target="_blank">github.com/ricardomvieira</a></p>
-        </section>
-    </main>
+</div>
+<div class="content">
+    <div id="default" class="project-content active">
+        <img src="placeholder.jpg" alt="Ricardo Vieira" class="profile-pic">
+    </div>
+    <div id="project1" class="project-content">
+        <h2>Project One</h2>
+        <p>Description of Project One. This is where you can talk about your concept, process, and results.</p>
+    </div>
+    <div id="project2" class="project-content">
+        <h2>Project Two</h2>
+        <p>Description of Project Two. Minimal design keeps the focus on the content itself.</p>
+    </div>
+    <div id="project3" class="project-content">
+        <h2>Project Three</h2>
+        <p>Description of Project Three. Include any relevant details, dates, or collaborators here.</p>
+    </div>
+    <div id="project4" class="project-content">
+        <h2>Project Four</h2>
+        <p>Description of Project Four. Keep it concise and direct, fitting the minimalist style.</p>
+    </div>
+    <div id="project5" class="project-content">
+        <h2>Project Five</h2>
+        <p>Description of Project Five. This area can be expanded later with images or media embeds.</p>
+    </div>
 </div>
 <script src="script.js"></script>
 </body>
