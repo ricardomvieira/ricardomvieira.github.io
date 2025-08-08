@@ -3,9 +3,8 @@ layout: default
 title: Ricardo Vieira
 ---
 
-<div class="intro">
-  <img src="/assets/images/profile.jpg" alt="Ricardo Vieira" class="profile-pic">
-  <div class="intro-text">
+<div class="wrap">
+  <section class="left">
     <h1>RICARDO VIEIRA</h1>
     <span class="subtitle">
       <a href="https://drive.google.com/file/d/1h6vjKp67jGPnLY6Mnubx8NZEv_2xnL_1/view?usp=sharing" target="_blank">
@@ -22,17 +21,26 @@ title: Ricardo Vieira
     </p>
 
     <h2>SOLO WORK</h2>
-    <p>
-      Possessíveis (2025)<br>
-      Panóptico. Reprovável Pessoa-Torre. (2023)<br>
-      We Press For Silence (2019)
+    <p class="projects">
+      <span class="proj" data-image="/assets/images/possiveis.jpg" data-caption="Possessíveis (2025)">Possessíveis (2025)</span><br>
+      <span class="proj" data-image="/assets/images/panoptico.jpg" data-caption="Panóptico. Reprovável Pessoa-Torre. (2023)">Panóptico. Reprovável Pessoa-Torre. (2023)</span><br>
+      <span class="proj" data-image="/assets/images/wepress.jpg" data-caption="We Press For Silence (2019)">We Press For Silence (2019)</span>
     </p>
 
     <h2>Collaborations</h2>
-    <p>
-      <a href="https://luizzanotello.com/tempo-e-tempo/" target="_blank">Tempo e Tempo</a> with Luiz Zanotello (2024)<br>
-      Invasor Abstracto #8 with OSSO Collective (2024)<br>
-      Nunca Estive Tão Perto (short-film by Francisca Dores, 2024)
+    <p class="projects">
+      <span class="proj" data-image="/assets/images/tempoetempo.jpg" data-caption="Tempo e Tempo with Luiz Zanotello (2024)">
+        <a href="https://luizzanotello.com/tempo-e-tempo/" target="_blank">Tempo e Tempo</a> with Luiz Zanotello (2024)
+      </span><br>
+      <span class="proj" data-image="/assets/images/invasor.jpg" data-caption="Invasor Abstracto #8 with OSSO Collective (2024)">Invasor Abstracto #8 with OSSO Collective (2024)</span><br>
+      <span class="proj" data-image="/assets/images/nuncaestive.jpg" data-caption="Nunca Estive Tão Perto (short-film by Francisca Dores, 2024)">Nunca Estive Tão Perto (short-film by Francisca Dores, 2024)</span>
     </p>
-  </div>
+  </section>
+
+  <aside class="right">
+    <figure class="viewer">
+      <img id="mainImage" src="/assets/images/profile.jpg" alt="Ricardo Vieira">
+      <figcaption id="mainCaption"></figcaption>
+    </figure>
+  </aside>
 </div>
