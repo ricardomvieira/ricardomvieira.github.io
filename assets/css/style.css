@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  max-width: 820px; /* give a bit more room for image + text */
+  max-width: 820px; /* more room for image + text */
   width: 100%;
   line-height: 1.7;
 }
@@ -70,10 +70,10 @@ h2 {
 
 p { margin: 0.5rem 0; }
 
-/* Maintain comfortable line breaks for Markdown hard-breaks */
-main br { line-height: 2; }
+/* Maintain comfortable line breaks */
+p br { line-height: 2; }
 
-/* Responsive: stack image on top on small screens */
+/* Responsive: stack image above text on small screens */
 @media (max-width: 780px) {
   body { align-items: flex-start; }
   main { padding-top: 2rem; max-width: 640px; }
