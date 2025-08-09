@@ -7,7 +7,7 @@ title: Ricardo Vieira
   <section class="left">
     <h1>RICARDO VIEIRA</h1>
     <span class="subtitle">
-      <a href="https://drive.google.com/file/d/1h6vjKp67jGPnLY6Mnubx8NZEv_2xnL_1/view?usp=sharing" target="_blank">
+      <a href="https://drive.google.com/file/d/1FSkMriGiPnnTZWi0NGO6Oul_-wdvZw-Z/view?usp=sharing" target="_blank">
         Portfolio + CV
       </a>
     </span>
