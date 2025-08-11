@@ -20,14 +20,14 @@ title: Ricardo Vieira
       Art and research are the processes and outputs from which thought and experiment are the framework. My solo work then spans from performances in experimental music and electronics to art installations, using the research done to explore potentialities in aesthetic choices during the creative process. My master’s dissertation “A sound from another: the object, the mark and the symbol” continues to delve into a greater understanding of the human perception of sound and the uses and significations we attribute to it. The ongoing work <em>Possessíveis</em> (premiered in Jan 2025) stems from this research.
     </p>
 
-    <h2>SOLO WORK</h2>
+    <h2>SOLO WORK (selection)</h2>
     <p class="projects">
       <span class="proj" data-image="/assets/images/possiveis.jpg" data-caption="Possessíveis (2025)">Possessíveis (2025)</span><br>
       <span class="proj" data-image="/assets/images/panoptico.jpg" data-caption="Panóptico. Reprovável Pessoa-Torre. (2023)">Panóptico. Reprovável Pessoa-Torre. (2023)</span><br>
       <span class="proj" data-image="/assets/images/wepress.jpg" data-caption="We Press For Silence (2019)">We Press For Silence (2019)</span>
     </p>
 
-    <h2>Collaborations</h2>
+    <h2>Collaborations (selection)</h2>
     <p class="projects">
       <span class="proj" data-image="/assets/images/tempoetempo.jpg" data-caption="Tempo e Tempo with Luiz Zanotello (2024)">
         <a href="https://luizzanotello.com/tempo-e-tempo/" target="_blank">Tempo e Tempo</a> with Luiz Zanotello (2024)
